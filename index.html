@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tracker Application</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div></div>
+  <header>
+    <h1>Crypto Tracker</h1>
+    <input type="text" id="search-bar" placeholder="Search cryptocurrencies...">
+    <div id="suggestions"></div>
+  </header>
+  <main>
+    <section id="crypto-list">
+      <h2>Top Cryptocurrencies</h2>
+      <div id="crypto-container"></div>
+    </section>
+    <section id="comparison">
+      <h2>Compare Cryptocurrencies</h2>
+      <div id="comparison-container"></div>
+    </section>
+  </main>
+  <script src="./js/main.js"></script>
 </body>
 </html>
