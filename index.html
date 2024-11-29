@@ -14,16 +14,48 @@
     <input type="text" id="search-bar" placeholder="Search cryptocurrencies...">
     <div id="suggestions"></div>
   </header>
+
   <main>
+    <!-- Controls Section -->
+    <section id="crypto-controls">
+      <div>
+        <label for="sort">Sort By:</label>
+        <select id="filter-select">
+          <option value="market_cap_desc">Market Cap</option>
+          <option value="price_asc">Price (Low to High)</option>
+          <option value="price_desc">Price (High to Low)</option>
+          <option value="volume_desc">Volume</option>
+          <option value="name_asc">Alphabet (A-Z)</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="crypto-comparison">
+      <h2>Compare Cryptocurrencies</h2>
+      <div id="comparison-container">
+        <p>No cryptocurrencies added for comparison yet.</p>
+      </div>
+    </section>
+
+    <!-- Cryptocurrency List Section -->
     <section id="crypto-list">
       <h2>Top Cryptocurrencies</h2>
       <div id="crypto-container"></div>
+      <div id="pagination-controls">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-number">1</span>
+        <button id="next-page">Next</button>
+      </div>
     </section>
-    <section id="comparison">
-      <h2>Compare Cryptocurrencies</h2>
-      <div id="comparison-container"></div>
+
+    <!-- Details Section -->
+    <section id="crypto-details">
+      <h2>Cryptocurrency Details</h2>
+      <div id="details-container"></div>
     </section>
   </main>
+
   <script src="./js/main.js"></script>
 </body>
 </html>
